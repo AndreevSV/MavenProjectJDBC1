@@ -31,10 +31,11 @@ public class Application {
 
         Employee employee = new Employee();
 
+        employee.setId(45);
         employee.setFirst_name("Slava");
         employee.setLast_name("Kaplan");
         employee.setGender("male");
-        employee.setAge(45);
+        employee.setAge(46);
         employee.setCity_id(1);
 
 //        employeeDao.addEmployee(employee);
@@ -43,9 +44,9 @@ public class Application {
 
 //        System.out.println(employeeDao.getEmployeeById(3));
 
-//        employeeDao.updateEmployeeCityById(1, 3);
+        employeeDao.updateEmployee(employee);
 
-        employeeDao.deleteEmployeeById(8);
+//        employeeDao.deleteEmployee(employee);
 
     }
 }
