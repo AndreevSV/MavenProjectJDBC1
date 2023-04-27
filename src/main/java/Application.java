@@ -43,9 +43,9 @@ public class Application {
 
 //        System.out.println(employeeDao.getEmployeeById(3));
 
-        employeeDao.updateEmployeeCityById(1, 3);
+//        employeeDao.updateEmployeeCityById(1, 3);
 
-//        employeeDao.deleteEmployeeById(9);
+        employeeDao.deleteEmployeeById(8);
 
     }
 }

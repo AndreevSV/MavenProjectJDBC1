@@ -13,7 +13,6 @@ import java.util.Properties;
 @RequiredArgsConstructor
 public class EmployeeDaoImpl implements EmployeeDao {
 
-    @Override
     public Connection getConnection() throws SQLException {
         Properties properties = new Properties();
         try (InputStream inputStream = getClass().getResourceAsStream("/application.properties")) {
@@ -102,7 +101,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
             preparedStatement.setInt(1, id);
             preparedStatement.setInt(2, city_id);
 
-            preparedStatement.executeQuery();
+            preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -113,7 +112,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM employee WHERE id = (?)")) {
             preparedStatement.setInt(1, id);
-            preparedStatement.executeQuery();
+            preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
