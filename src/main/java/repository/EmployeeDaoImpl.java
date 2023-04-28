@@ -2,6 +2,9 @@ package repository;
 
 import lombok.RequiredArgsConstructor;
 import model.Employee;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import util.HibernateSessionFactoryUtil;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -94,28 +97,22 @@ public class EmployeeDaoImpl implements EmployeeDao {
     }
 
     @Override
-    public void updateEmployeeCityById(Integer id, Integer city_id) {
-        try (Connection connection = getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement("UPDATE employee SET city_id = city.city_id FROM city WHERE employee.id = (?) AND city.city_id = (?)")
-        ) {
-            preparedStatement.setInt(1, id);
-            preparedStatement.setInt(2, city_id);
-
-            preparedStatement.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
+    public void updateEmployee(Employee employee) {
+        try (Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession()) {
+            Transaction transaction = session.beginTransaction();
+            session.update(employee);
+            transaction.commit();
         }
     }
 
     @Override
-    public void deleteEmployeeById(Integer id) {
-        try (Connection connection = getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM employee WHERE id = (?)")) {
-            preparedStatement.setInt(1, id);
-            preparedStatement.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
+    public void deleteEmployee(Employee employee) {
+        try (Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession()) {
+            Transaction transaction = session.beginTransaction();
+            session.delete(employee);
+            transaction.commit();
         }
+
     }
 
 
