@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="551a61aa-2775-4d23-8c43-cea4e23b7757" name="Changes" comment="2-nd commit&#10;Все корректно отрабатывает, при этом методы update и delete возвращают подобную ошибку. Не понимаю, как исправить.&#10;&#10;org.postgresql.util.PSQLException: Запрос не вернул результатов.&#10;&#9;at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:135)&#10;&#9;at repository.EmployeeDaoImpl.updateEmployeeCityById(EmployeeDaoImpl.java:105)&#10;&#9;at Application.main(Application.java:46)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/HibernateSessionFactoryUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+    <list default="true" id="551a61aa-2775-4d23-8c43-cea4e23b7757" name="Changes" comment="Commit. Using Hibernate on Delete and Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/City.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/EmployeeDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/repository/EmployeeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/EmployeeDaoImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +79,7 @@
       <workItem from="1682414057416" duration="2301000" />
       <workItem from="1682416449133" duration="2626000" />
       <workItem from="1682581266653" duration="367000" />
+      <workItem from="1682686721633" duration="7858000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1682412090098</created>
@@ -97,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682417524109</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit. Using Hibernate on Delete and Update">
+      <created>1682615951670</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682615951670</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +123,8 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="First commit&#10;Все корректно отрабатывает, при этом методы update и delete возвращают подобную ошибку. Не понимаю, как исправить.&#10;&#10;org.postgresql.util.PSQLException: Запрос не вернул результатов.&#10;&#9;at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:135)&#10;&#9;at repository.EmployeeDaoImpl.updateEmployeeCityById(EmployeeDaoImpl.java:105)&#10;&#9;at Application.main(Application.java:46)" />
     <MESSAGE value="2-nd commit&#10;Все корректно отрабатывает, при этом методы update и delete возвращают подобную ошибку. Не понимаю, как исправить.&#10;&#10;org.postgresql.util.PSQLException: Запрос не вернул результатов.&#10;&#9;at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:135)&#10;&#9;at repository.EmployeeDaoImpl.updateEmployeeCityById(EmployeeDaoImpl.java:105)&#10;&#9;at Application.main(Application.java:46)" />
-    <option name="LAST_COMMIT_MESSAGE" value="2-nd commit&#10;Все корректно отрабатывает, при этом методы update и delete возвращают подобную ошибку. Не понимаю, как исправить.&#10;&#10;org.postgresql.util.PSQLException: Запрос не вернул результатов.&#10;&#9;at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:135)&#10;&#9;at repository.EmployeeDaoImpl.updateEmployeeCityById(EmployeeDaoImpl.java:105)&#10;&#9;at Application.main(Application.java:46)" />
+    <MESSAGE value="Commit. Using Hibernate on Delete and Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit. Using Hibernate on Delete and Update" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

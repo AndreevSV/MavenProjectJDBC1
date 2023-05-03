@@ -18,7 +18,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
     public Connection getConnection() throws SQLException {
         Properties properties = new Properties();
-        try (InputStream inputStream = getClass().getResourceAsStream("/application.properties")) {
+        try (InputStream inputStream = getClass().getResourceAsStream("/hibernate.cfg.xml")) {
             properties.load(inputStream);
         } catch (IOException e) {
             e.printStackTrace();
@@ -35,11 +35,11 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO employee (first_name, last_name, gender, age, city_id) VALUES (?,?,?,?,?) RETURNING id")) {
-            preparedStatement.setString(1, employee.getFirst_name());
-            preparedStatement.setString(2, employee.getLast_name());
+            preparedStatement.setString(1, employee.getFirstName());
+            preparedStatement.setString(2, employee.getLastName());
             preparedStatement.setString(3, employee.getGender());
             preparedStatement.setInt(4, employee.getAge());
-            preparedStatement.setInt(5, employee.getCity_id());
+            preparedStatement.setInt(5, employee.getCityId());
 
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
@@ -59,11 +59,11 @@ public class EmployeeDaoImpl implements EmployeeDao {
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 employee.setId(resultSet.getInt("id"));
-                employee.setFirst_name(resultSet.getString("first_name"));
-                employee.setLast_name(resultSet.getString("last_name"));
+                employee.setFirstName(resultSet.getString("first_name"));
+                employee.setLastName(resultSet.getString("last_name"));
                 employee.setGender(resultSet.getString("gender"));
                 employee.setAge(resultSet.getInt("age"));
-                employee.setCity_id(resultSet.getInt("city_id"));
+                employee.setCityId(resultSet.getInt("city_id"));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -88,7 +88,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
                 Integer age = Integer.parseInt(resultSet.getString(5));
                 Integer city_id = resultSet.getInt(6);
 
-                employeeList.add(new Employee(id, first_name, last_name, gender, age, city_id));
+                employeeList.add(new Employee(id, first_name, last_name, gender, age, List<City>));
             }
         } catch (SQLException e) {
             e.printStackTrace();

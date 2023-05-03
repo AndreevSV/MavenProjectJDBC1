@@ -32,11 +32,11 @@ public class Application {
         Employee employee = new Employee();
 
         employee.setId(45);
-        employee.setFirst_name("Slava");
-        employee.setLast_name("Kaplan");
+        employee.setFirstName("Slava");
+        employee.setLastName("Kaplan");
         employee.setGender("male");
         employee.setAge(46);
-        employee.setCity_id(1);
+        employee.setCityId(1);
 
 //        employeeDao.addEmployee(employee);
 
