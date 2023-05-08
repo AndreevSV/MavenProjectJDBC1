@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="551a61aa-2775-4d23-8c43-cea4e23b7757" name="Changes" comment="Commit. Using Hibernate on Delete and Update">
+    <list default="true" id="66bf30c0-2fdc-487a-9768-7296bf693eb2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/CityDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/CityDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/City.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/repository/EmployeeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/EmployeeDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/HibernateSessionFactoryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/HibernateSessionFactoryUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,109 +32,80 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GoLibraries">
-    <option name="indexEntireGoPath" value="true" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectId" id="2OuY0hUO9YClhReuHBiw9tkqYnl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2PVAOMlhMmPSjw0sRWIaB8JF3Bf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/andre/IdeaProjects/MavenProjectJDBC1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "PostgreSQL"
     ]
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application" />
+      <module name="MavenProjectJDBC" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="MavenProjectJDBC1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="MavenProjectJDBC1" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="551a61aa-2775-4d23-8c43-cea4e23b7757" name="Changes" comment="" />
-      <created>1682411715340</created>
+      <changelist id="66bf30c0-2fdc-487a-9768-7296bf693eb2" name="Changes" comment="" />
+      <created>1683531846891</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1682411715340</updated>
-      <workItem from="1682411717053" duration="2319000" />
-      <workItem from="1682414057416" duration="2301000" />
-      <workItem from="1682416449133" duration="2626000" />
-      <workItem from="1682581266653" duration="367000" />
-      <workItem from="1682686721633" duration="7858000" />
+      <updated>1683531846891</updated>
+      <workItem from="1683531847719" duration="16841000" />
     </task>
-    <task id="LOCAL-00001" summary="First commit">
-      <created>1682412090098</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1682412090098</updated>
-    </task>
-    <task id="LOCAL-00002" summary="2-nd commit&#10;Все корректно отрабатывает, при этом методы update и delete возвращают подобную ошибку. Не понимаю, как исправить.&#10;&#10;org.postgresql.util.PSQLException: Запрос не вернул результатов.&#10;&#9;at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:135)&#10;&#9;at repository.EmployeeDaoImpl.updateEmployeeCityById(EmployeeDaoImpl.java:105)&#10;&#9;at Application.main(Application.java:46)">
-      <created>1682417524109</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1682417524109</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Commit. Using Hibernate on Delete and Update">
-      <created>1682615951670</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1682615951670</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="First commit" />
-    <MESSAGE value="First commit&#10;Все корректно отрабатывает, при этом методы update и delete возвращают подобную ошибку. Не понимаю, как исправить.&#10;&#10;org.postgresql.util.PSQLException: Запрос не вернул результатов.&#10;&#9;at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:135)&#10;&#9;at repository.EmployeeDaoImpl.updateEmployeeCityById(EmployeeDaoImpl.java:105)&#10;&#9;at Application.main(Application.java:46)" />
-    <MESSAGE value="2-nd commit&#10;Все корректно отрабатывает, при этом методы update и delete возвращают подобную ошибку. Не понимаю, как исправить.&#10;&#10;org.postgresql.util.PSQLException: Запрос не вернул результатов.&#10;&#9;at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:135)&#10;&#9;at repository.EmployeeDaoImpl.updateEmployeeCityById(EmployeeDaoImpl.java:105)&#10;&#9;at Application.main(Application.java:46)" />
-    <MESSAGE value="Commit. Using Hibernate on Delete and Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit. Using Hibernate on Delete and Update" />
-  </component>
-  <component name="VgoProject">
-    <integration-enabled>false</integration-enabled>
-    <settings-migrated>true</settings-migrated>
   </component>
 </project>

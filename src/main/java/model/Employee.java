@@ -27,7 +27,7 @@ public class Employee {
 //    @Column(name = "city_id")
 //    public Integer cityId;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "city_id", referencedColumnName = "city_id")
     private City city;
 

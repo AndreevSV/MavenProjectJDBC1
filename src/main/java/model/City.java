@@ -21,9 +21,11 @@ public class City {
     @Column(name = "city_name")
     public String cityName;
 
-    @OneToMany(mappedBy = "city", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "city", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Employee> employee;
 
-
-
+    public City(Integer id, String cityName) {
+        this.id = id;
+        this.cityName = cityName;
+    }
 }
