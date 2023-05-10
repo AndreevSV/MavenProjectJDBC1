@@ -3,6 +3,7 @@ package model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.util.List;
@@ -21,7 +22,9 @@ public class City {
     @Column(name = "city_name")
     public String cityName;
 
-    @OneToMany(mappedBy = "city", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "city_id")
+    @Cascade(org.hibernate.annotations.CascadeType.DELETE)
     private List<Employee> employee;
 
     public City(Integer id, String cityName) {

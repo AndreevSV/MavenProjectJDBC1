@@ -21,7 +21,7 @@ public class Application {
 
 //        cityDao.getCityById(4);
 
-        cityDao.deleteCity(new City(7, "Kalinigrad"));
+        cityDao.deleteCity(new City(5, "Krasnodar"));
 
 //        cityDao.updateCity(new City(7, "Kaliningrad"));
 

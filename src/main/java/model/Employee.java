@@ -3,6 +3,7 @@ package model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 
@@ -29,6 +30,7 @@ public class Employee {
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "city_id", referencedColumnName = "city_id")
+    @Cascade(org.hibernate.annotations.CascadeType.DELETE)
     private City city;
 
 }
