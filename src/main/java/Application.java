@@ -1,50 +1,50 @@
+import model.City;
 import model.Employee;
+import repository.CityDao;
+import repository.CityDaoImpl;
 import repository.EmployeeDao;
 import repository.EmployeeDaoImpl;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 public class Application {
     public static void main(String[] args) {
-//        final String user = "postgres";
-//        final String password = "****";
-//        final String url = "jdbc:postgresql://localhost:5432/skypro";
 //
-//        try (final Connection connection = DriverManager.getConnection(url, user, password);
-//             final PreparedStatement statement = connection.prepareStatement("SELECT id, first_name, last_name, gender, age, city_name FROM employee LEFT JOIN city ON city.city_id = employee.city_id WHERE id = (?) ORDER BY id")) {
-//            statement.setInt(1, 4);
+//        City city = new City();
+//        city.setCityName("Kaluga");
 //
-//            final ResultSet resultSet = statement.executeQuery();
+        CityDao cityDao = new CityDaoImpl();
 //
-//            while (resultSet.next()) {
-//                Integer id = resultSet.getInt(1);
-//                String first_name = resultSet.getString(2);
-//                String last_name = resultSet.getString(3);
-//                String gender = resultSet.getString(4);
-//                Integer age = resultSet.getInt(5);
-//                String city = resultSet.getString(6);
-//                System.out.println(id + " " + first_name + " " + last_name + " " + gender + " " + age + " " + city);
-//            }
-//
-//        } catch (SQLException e) {
-//            e.getCause();
-//        }
-        EmployeeDao employeeDao = new EmployeeDaoImpl();
+//        cityDao.addCity(city);
 
-        Employee employee = new Employee();
+//        cityDao.getCityById(4);
 
-        employee.setId(45);
-        employee.setFirst_name("Slava");
-        employee.setLast_name("Kaplan");
-        employee.setGender("male");
-        employee.setAge(46);
-        employee.setCity_id(1);
+        cityDao.deleteCity(new City(5, "Krasnodar"));
 
+//        cityDao.updateCity(new City(7, "Kaliningrad"));
+
+//       cityDao.getAllCityes();
+
+
+//        EmployeeDao employeeDao = new EmployeeDaoImpl();
+//
+//        Employee employee = new Employee();
+//        employee.setId(6);
+//        employee.setFirstName("Andrey");
+//        employee.setLastName("Sokolov");
+//        employee.setGender("male");
+//        employee.setAge(31);
+//        employee.setCity(new City(4, "Tula"));
+//
 //        employeeDao.addEmployee(employee);
 
-//        System.out.println(employeeDao.getAllEmployees());
+//        employeeDao.getAllEmployees();
 
-//        System.out.println(employeeDao.getEmployeeById(3));
+//        employeeDao.getEmployeeById(3);
 
-        employeeDao.updateEmployee(employee);
+//        employeeDao.updateEmployee(employee);
 
 //        employeeDao.deleteEmployee(employee);
 

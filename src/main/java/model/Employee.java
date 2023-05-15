@@ -3,6 +3,7 @@ package model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 
@@ -10,21 +11,26 @@ import javax.persistence.*;
 @RequiredArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table
+@Table(name = "employee")
 public class Employee {
     @Id
-    @Column
-    @GeneratedValue
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer id;
-    @Column
-    public String first_name;
-    @Column
-    public  String last_name;
-    @Column
+    @Column(name = "first_name")
+    public String firstName;
+    @Column(name = "last_name")
+    public  String lastName;
+    @Column(name = "gender")
     public String gender;
-    @Column
+    @Column(name = "age")
     public Integer age;
-    @Column
-    public Integer city_id;
+//    @Column(name = "city_id")
+//    public Integer cityId;
+
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "city_id", referencedColumnName = "city_id")
+    @Cascade(org.hibernate.annotations.CascadeType.DELETE)
+    private City city;
 
 }

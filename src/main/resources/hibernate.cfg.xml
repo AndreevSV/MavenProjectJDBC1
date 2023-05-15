@@ -8,7 +8,7 @@
         <property name="connection.url">jdbc:postgresql://localhost:5432/skypro</property> <!-- BD Name -->
         <property name="connection.driver_class">org.postgresql.Driver</property> <!-- DB Driver -->
         <property name="connection.username">postgres</property> <!-- DB User -->
-        <property name="connection.password">Tarantul@2019</property> <!-- DB Password -->
+        <property name="connection.password">postgres</property> <!-- DB Password -->
 
         <property name="hbm2ddl.auto">update</property> <!-- create / create-drop / update -->
 
